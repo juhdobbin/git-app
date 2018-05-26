@@ -1,0 +1,9 @@
+{
+ "github.com/*":{   
+   "secure": false,
+   "logLevel": "debug",
+   "changeOrigin": true
+
+ }
+
+}

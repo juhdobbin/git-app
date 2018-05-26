@@ -1,0 +1,28 @@
+$background-page: #364150;
+$background-content: #eceef1;
+
+
+.login {
+  background-color: $background-page;
+  .content {
+    background-color: $background-content;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    width: 400px;
+    margin: 40px auto 10px;
+    padding: 10px 30px 30px;
+    overflow: hidden;
+    position: relative;
+    h3 {
+      color: #4db3a5;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 25px;
+
+    }
+  }
+}
