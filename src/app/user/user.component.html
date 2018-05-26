@@ -1,4 +1,10 @@
-<p>
+<!-- <p>
   user works!
 </p>
-<a (click)="busca()">buscar</a>
+<a (click)="busca()">buscar</a> -->
+<div [hidden]="!showUserRepos">
+  <ul>
+<li *ngFor="let repositorio of userRepos"> {{repositorio.name}} - {{repositorio.forks}} - {{repositorio.stargazers_count}} </li>
+  </ul>
+
+</div>

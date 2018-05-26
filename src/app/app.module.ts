@@ -12,7 +12,7 @@ import { GithubService } from './services/github.service';
   declarations: [
     AppComponent,
     LoginComponent,
-    UserComponent
+    UserComponent    
   ],
   imports: [
     BrowserModule,
