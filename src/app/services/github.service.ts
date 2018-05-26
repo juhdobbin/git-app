@@ -18,7 +18,7 @@ export class GithubService {
     }   
     console.log(obj);
     // tslint:disable-next-line:max-line-length
-    return this.http.post(`https://github.com/login/oauth/access_token`, obj )
-      .pipe(map(response => response.json()));
+    return this.http.post(`/login/oauth/access_token`, obj)
+      .pipe(map(response => response.text()));
   }
 }

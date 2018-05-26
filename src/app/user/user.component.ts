@@ -15,15 +15,18 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.code = params['code'];
-      this.githubService.getAcessToken(this.code)
-      .subscribe(data => { console.log(data); },
-       err => { console.log(err); }
-      );
-    });
-   
+      
 
   }
+    busca(){
+      this.route.queryParams.subscribe(params => {
+        this.code = params['code'];
+        this.githubService.getAcessToken(this.code)
+          .subscribe(data => { console.log(data); },
+            err => { console.log(err); }
+          );
+      });
+    }
+
 
 }
