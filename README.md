@@ -4,8 +4,8 @@ Projeto gerado com o [Angular CLI](https://github.com/angular/angular-cli) versi
 
 
 ## Pré-requisitos
-node > 8.x (npm install -g node@latest)
-angular cli ( npm install -g @angular/cli )
+- node > 8.x `npm install -g node@latest`
+- angular cli `npm install -g @angular/cli )`
 
 ## Ambiente de Desenvolvimento
 
