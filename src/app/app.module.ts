@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { UserComponent } from './user/user.component';
 import { GithubService } from './services/github.service';
 
@@ -17,8 +17,7 @@ import { GithubService } from './services/github.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule,
-    JsonpModule
+    HttpModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]

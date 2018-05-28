@@ -9,7 +9,4 @@ Executar `npm start` para rodar o projeto em ambiente de desenvolvimento (Localh
 
 ## Build Produção
 
-Executar `npm build` para fazer um build do projeto, os arquivos finais estão disponíveis na pasta `dist/`.
-
-## Observações
-
+Executar `ng build` para fazer um build do projeto, os arquivos finais estarão disponíveis na pasta `dist/`.
