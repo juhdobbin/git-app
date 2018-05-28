@@ -16,7 +16,9 @@
     </div>
   </div>
 </div>
+
 <div class="container">
+
   <div class="row">
     <div class="col-10 col-md-8">
       <h2>Seus Repositórios no Github!</h2>
@@ -27,13 +29,22 @@
       </p>
     </div>
   </div>
-  <div class="row" *ngIf="userRepos.length > 0">
-    <div class="col-12 col-sm-6 col-md-4" *ngFor="let repositorio of userRepos">
-      <div class="portlet">
-        <h4 class="title">{{repositorio.name}}</h4>
-        <p>{{repositorio.description}}</p>
-        <div [hidden]="!showUserRepos">       
-        <ul class="list-unstyled">
+
+  <div *ngIf="showUserRepos">
+    <div class="row" *ngIf="userRepos.length <= 0">
+      <div class="col">
+        <p>
+          Nenhum repositório encontrado.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="userRepos.length > 0">
+      <div class="col-12 col-sm-6 col-md-4" *ngFor="let repositorio of userRepos">
+        <div class="portlet">
+          <h4 class="title">{{repositorio.name}}</h4>
+          <p>{{repositorio.description}}</p>
+          <ul class="list-unstyled">
             <li>
               <i class="icon fork"></i>Forks - {{repositorio.forks_count}}
             </li>
@@ -43,13 +54,6 @@
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-<div class="row" *ngIf="userRepos.length <= 0">
-    <div class="col">
-      <p>
-        Nenhum repositório encontrado.
-      </p>
     </div>
   </div>
 </div>

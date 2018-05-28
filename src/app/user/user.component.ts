@@ -12,7 +12,7 @@ import { LoginComponent } from '../login/login.component';
 export class UserComponent implements OnInit {
 
   private code: String;
-  private showUserRepos: Boolean = false;
+  public showUserRepos: Boolean = false;
   public userRepos: any;
 
   constructor(
