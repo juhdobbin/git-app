@@ -13,7 +13,7 @@ export class UserComponent implements OnInit {
 
   private code: String;
   private showUserRepos: Boolean = false;
-  private userRepos: any;
+  public userRepos: any;
 
   constructor(
     private route: ActivatedRoute,
